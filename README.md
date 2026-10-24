@@ -103,7 +103,6 @@ The project is structured by asset category, with separate directories for raw f
 │
 ├── cleaned_data/                             # Intermediate cleaned datasets used in pipelines
 ├── Mutual_Fund_Comparative_Analysis_Report.md# Complete formal research report
-├── build_report_doc.py                       # Python script to compile the Word report (.docx)
 │
 ├── Notebooks:
 │   ├── large_cap_cleaning.ipynb              # Large-cap extraction & validation
@@ -143,7 +142,7 @@ The project is structured by asset category, with separate directories for raw f
 ### 1. Requirements
 Install required Python libraries:
 ```bash
-pip install pandas numpy matplotlib seaborn openpyxl python-docx
+pip install pandas numpy matplotlib seaborn openpyxl
 ```
 
 ### 2. Running Analysis Notebooks
@@ -152,8 +151,3 @@ Open the root directory in Jupyter Notebook or VS Code:
 - For category-specific metrics and chart exports: run `large_cap_fund_analysis.ipynb`, `mid_cap_fund_analysis.ipynb`, or `small_cap_fund_analysis.ipynb`.
 - For cross-category comparison and equal-weighted portfolio models: run `overall_analysis.ipynb`.
 
-### 3. Compiling the Word Report
-To generate the formatted academic `.docx` report with embedded charts and tables:
-```bash
-python build_report_doc.py
-```
